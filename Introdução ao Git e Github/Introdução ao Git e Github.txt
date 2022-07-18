@@ -1,0 +1,89 @@
+aula: INTRODUÇÃO AO GIT
+	tópico: Entendendo Git e sua importância:
+		GIT: Criado por Linus para facilitar o traballho dos progrmadores e recuperar versões de código.
+		GITHUB: É um repositório online, onde são armazenados os códigos.
+		Benefícios: Controle de versão, armazenamento em nuvem, trabalho em equipe, melhorar seu código, reconhecimento.
+
+aula: NAVEGAÇÃO VIA COMMAND LINE INTERFACE E INSTALAÇÃO
+	tópico: Comandos básicos para um bom desempenho no terminal
+		Mudar pastas: cd nomedapasta
+		Listar as pastas: dir
+		Criar pastas/arquivos: mkdir nomedapasta
+		Deletar pastas/arquivos: del/rmdir
+		Voltar um nível da pasta: ..
+		Limpar o prompt: cls
+		Autocompletar: tecla TAB
+		Criar arquivo: echo hello > hello.txt
+		Apagar apenas arquivos: del nomedoarquivoounomedapasta
+		Apagar repositório: rmdir nomedapasta /S /Q
+
+	tópico:Realizando a instalação do GIT
+		site oficial: https://git-scm.com/
+
+aula: ENTENDENDO COMO O GIT FUNCIONA POR BAIXO DOS PANOS
+	tópico: Tópicos fundamentais para entender o funcionamento do Git
+		SHA1: conjunto de funções criptográficas projetadas pela NSA. A encriptação gera conjunto de characteres identificador de 40dígitos. É uma forma curta de representar um arquivo.
+	
+	tópico: Objetos internos do Git
+		Blobs - contém metadados, sua estrutura básica consiste em tipo do objeto, tamanho da string/arquivo, contra-barra e 0 (\0), e o conteúdo do arquivo.
+		Trees - armazenam blobs, também contém metadados, também guarda o nome do arquivo.
+		Commits - Dá sentido a operação que está fazendo, aponta para uma ávore, um parente, um autor, uma mensagem, timestamp (carimbo de tempo) e SHA1.
+
+	tópico: Chave SSH e Token
+		Chave SSH é uma forma de estabelecer uma conexão segura entre duas máquinas, através de uma chave pública e privada.
+		criando chave ssh pro git - github:
+		gitbhub -> settings -> SSH and GPG keys -> New SSH keys
+		gitbash -> comando: ssh-keygen -t ed25519 -C seu e-mail ->enter ->senha -> repete senha -> recebe um fingerprint -> clear -> cd /c/Users/pastaondeestaaschaves/.ssh/ -> cat id_ed25519.pub ->enter -> copia a chave pública.
+		github -> coloca um título ->cola a chave publica -> addSSH key
+		adicionar um agente:
+		gitbash -> eval $(ssh-agent -s) -> ssh-add id_ed25519->coloca a senha dada anteriormente
+		Ao clonar um repositório do github:
+		code-> aba SSH
+		git bash->git clone e link ssh clonado -> yes.
+
+		Gerar token de acesso pessoal
+		github -> developer settings -> personal access tokens -> generate new tokens -> pode configurar uma data de expiração do token-> marcar repo -> nota pra o token -> generate token -> copiar e salvar.
+		Ao clonar um repositório do github:
+		github ->aba https -> copiar
+		git bash -> git clone colar link -> colar o token
+
+aula: PRIMEIROS COMANDOS COM GIT
+	tópico: Iniciando o Git e criando um commit
+		Iniciar o GIT: git init
+		Iniciar o versionamento: git add
+		Criar um commit: git commit
+		Ver o status da pasta: git status
+		Adiciona todas as modificações feitas: git add*		
+		Trazer a lista de todas as configurações do git: git config --list
+		Retirar as configurações de email do autor: git config --global --unset user.email
+		Retirar as configurações de nome do autor: git config --global--unset user.name
+
+		criando repositório:
+		git bash -> mkdir nomedapasta -> cd nomedapasta/ -> git init -> ls -a (para abrir pastas ocultas) -> git config --global user.email "seu e-mail" (para criar o nome do autor) -> git config --global user.name seunome (criar o apelido do autor)
+		(criar um arquivo)
+		git add * (para adicionar todas as modificações)->git commit -m "commit inicial"
+
+aula: CICLO DE VIDA DOS ARQUIVOS NO GIT
+	tópico: Passo a passo no ciclo de vida
+		tracked e untracked
+		trackeds: unmodified(ainda não foi modificado), modified(modificado), staged(preparado para "entrar no palco", preparando para serem outro tipo de agrupamento, o commit)
+		untracked: não há ciencia deles.
+		unmodified->modified->staged->commit->
+
+
+
+aula: INTRODUÇÃO AO GITHUB
+	tópico: Trabalhando com o github
+		endereço: https://github.com/
+		criando um repositório no github:
+		github -> repositórios ->new ->nome do repositório e descrição ->público ou privado -> create 
+		giit bash
+		git remote add origin link do repositório do github -> git remote -v (mostra lista de repositórios remotos cadastrados) -> git push origin master
+
+aula: RESOLVENDO CONFLITOS
+	tópico: Como os conflitos acontecem no GitHub e como resolvê-los
+		Conflito de merge
+		git pull origin master
+		baixar repositório: selecionar o link
+		git bash -> git clone link
+

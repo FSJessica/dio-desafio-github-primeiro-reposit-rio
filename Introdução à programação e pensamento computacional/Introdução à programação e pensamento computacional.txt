@@ -1,0 +1,142 @@
+aula: PENSAMENTO COMPUTACIONAL
+	tópico: Apresentação
+		instrutora: Juliana Mascarenhas
+		linkedin: @in/juliana-mascarenhas-ds/
+		Github: https://github.com/julianazanelatto
+
+	tópico: Introdução
+		Pensamento computacional é o processo de pensamento envolvido na expressão de soluções em passos computacionais ou algoritmos que podem ser implementados no computador.
+		Não se restringe ao mundo das ciências exatas e da computação.
+		O pensamento computacional é dividido em 4 pilares:
+		1.Decomposição: Pegar um grande problema e dividir em problemas menores mais simples de resolver. Assim resolvendo o problema maior com mais facilidade.
+		2.Reconhecimento de padrões: Identificar similaridades, diferenças e tendências dentro de um contexto distinto.
+		3.Abstração: Extrapolar o conceito do problema para uma forma generalista.
+		4.Desing de algoritmos: Automatizar, definir passo a passo a solução do problema.
+
+	tópico: Habilidades complementares
+		Raciocínio lógico: Forma de pensamento estruturado, que permite encontrar a conclusão ou determinar a resolução de um problema. Pode ser classificado em indução, dedução e abdução.
+		Aperfeiçoamento: Ato de melhorar e refinar. Faz parte do aperfeiçoamento processos como: encontrar solução eficiente, otimizar processos, simplificar linhas de códigos, funções bem definidas.
+
+	tópico: Pilares:Decomposição
+		É o primeiro passo da resolução de problemas dentro do conceito de pensamento computacional. Suas duas estratégias principais são:
+		1. Análise: Processo de quebrar e determinar partes menores e gerenciáveis, estudar e explorar o contexto.
+		2.Síntese: Combinar os elementos recompondo o problema original, fundir os elementos de maneira coerente.
+		A ordem de execução pode ser sequencial ou paralelo, depende do projeto.
+		Como decompor: Identificar ou coletar dados -> Agregar os dados -> Funcionalidade
+
+	tópico: Pilares:Padrões
+		Padrão: Modelo base, estrutura invariante, repetição.
+		Algumas aplicações: Classificação de dados, Reconhecimento de imagem, Reconhecimento de fala, Análise de cenas, Classificação de documentos.
+		Porque determinar padrões? Generalizar, com o objetivo de obter resolução para problemas diferentes.
+		Como estimular esse comportamento? Representação de atributos, Aprendizado - conceito associado ao objeto, armazenar dados, regras de decisão.
+		Por fim, a abordagem do reconhecimento de padrões é a extração de características para a classificação de dados.
+		
+	tópico: Pilares:Abstração
+		Abstrair: Observar, um ou mais elementos, avaliando características e propriedades em separado
+		Abstração: Processo intelectual de isolamento de um objeto da realidade.
+		Como classificar os dados? Características, Detectar pontos essenciais, generalizar x detalhar.
+	
+	tópico: Pilares:Algoritmos
+		Algoritmo:Processo de resolução de problemas "step by step" utilizando instruções.
+		Como construir um algoritmo?Compreensão do problema, Definição dados de entrada, Definir processamento, Definir dados de saída, Utilizar um método de construção, Teste e diagnóstico.
+
+
+	tópico: Estudo de caso conceitual:perdido
+		Supondo que esteja perdido em uma floresta, como utilizar os 4 pilares do pensamento computacional o auxiliaria a sobreviver?
+
+	tópico: Estudo de caso aplicado: Soma de um intervalo
+		Supondo que tenha uma sequencia de números entre 1 e 200 e você precisa realizar a soma entre esse intervalo, como utilizar o pensamento computacional para encontrar o resultado de uma forma eficiente?
+
+	tópico: Estudo de caso aplicado: Advinhe um número
+		Dado que uma pessoa tenha escolhido um número aleatóriamente, e que ela possa apenas lhe responder com perguntas de sim ou não, determine a forma mais eficiente de advinhar o número escolhido, usando o pensamento computacional.
+
+
+aula: LÓGICA DE PROGRAMAÇÃO
+	tópico: O que é lógica?
+		Lógica está sempre relacionada à um problema. Servindo para encontrar sua solução.
+		Problema: Questão que foge a uma determinada regra, ou melhor, é um desvio de percurso, o qual impede de atingir um objetivo com eficiência e eficácia.
+		Lógica: Parte da filosofia que trata das fromas do pensamento em geral. No mundo da computação, a lógica é a organização e planejamento das instruções, assertivas em um algoritmo, a fim de viabilizar a implantação de um programa.
+
+	tópico: Técnicas de lógica de programação
+		técnica linear:Tradicional, não tem vínculo, possui estrutura hierárquica, muito associada à matemática e programação de computadores.
+		técnica estruturada: escrita de programas, entendimento, validação e manutenção de programas, não linear, possui mais opções.
+		técnica modular: Partes indeppendentes são controladas por um conjunto de regras, simplificação do algoritmo, decomposição, verificação do módulo.
+
+aula: FUNDAMENTOS DE ALGORITMOS
+	tópico: Tipologia e variáveis
+		A função de um computador é processar as informações dadas à ele, sejam essas informações dados, ou instruções.
+		tipos de dados: numéricos, caracteres e lógicos.
+		numéricos: real e inteiros
+		caractere:Tudo o que não é número
+		lógico(booleano):verdadeiro e falso
+		O que é variável? Estrutura mutável, possui variações, inconstante, instável, incerto, recebe um tipo de dado.
+		Pode ser: de ação (Modificação de estado), de controle(vigiada, controle)
+
+	tópico: Instruções primitivas
+		O que é instrução? Palavras-chave (vocabulário) de uma determinada linguagem de programação que tem por finalidade comandar um computador que irá tratar os dados.
+
+	tópico: Estruturas condicionais e operadores
+		Estruturas condicionais podem ser do tipo:
+		simples - Linear, uma condição e uma Operação
+		Composta - Possui uma excessão
+		Encadeadas - Uma sucessão de estruturas condicionais.
+		Seus operadores são:
+		= igual a
+		<> Diferente de
+		> Maior que
+		< Menor que
+		>= Maior ou igual a 
+		<= Menor ou igual a
+
+	tópico: Estruturas de repetição
+		Trecho de código que se repete até que atinja a condição de parada.
+		Vantagens: Redução de linhas, Compreensão facilitada, Redução de erro
+		Quais são essas estruturas?
+		Enquanto... faça (teste no início)
+		repita... até (teste no final)
+		Para.... de... até... faça (teste no início, número de repetições definidas.)
+
+	tópico: Vetores e matrizes
+		Um vetor é caracterizado por uma variável dimensionada com tamanho pré-fixado.
+		Matriz é uma tabela organizada em linhas e colunas no formato m x n onde o m representa o número de linhas e o n o número de colunas.
+
+	tópico: O que são funções?
+		As funções, ou sub-rotinas são blocos de instruções que realizamtarefas específicas.
+		Benefícios da modularização do programa: código mais claro, limpo e conciso, reutilização de instruções.
+		O que está atrelado à uma função? Definição, Nome, Invocação, Variável local
+
+	tópico: Instruções de entrada e saída
+		Instruções de entrada: Consiste na inserção e recebimento de dados do mundo real por meio de ação de alguma interface, seja teclado, mouse, arquivos, entre outros.
+		Instruções de saída: Consiste na impressão dos dados do mundo abstrato, digital por meio de ação de alguma interface.
+
+aula: LINGUAGENS DE PROGRAMAÇÃO
+	tópico: Introdução à linguagens de programação
+		Método padronizado composto por um conjunto de regras sintáticas e semânticas de implementação de um código fonte.
+
+	tópico: Como um computador entende o programa?
+		Um computador entende o programa através da tradução (geração do programa objeto e execução do programa objeto) e interpretação (programa fonte executado diretamente)
+	tópico: Características de um programa
+		Diretrizes para um programa bem desenvolvido:
+		Legibilidade (Coerencia nas instruções)
+		Redigibilidade(facilidade de escrita do código)
+		Confiabilidade(o que o código foi programado pra fazer)
+		Baixo custo(análise de impacto)
+	tópico: Análises de código
+		Lexical (scanner, leitura): 
+		Syntax (forma, estrutura da frase)
+		Semantic (símbolos, significado, lógica)
+	tópico: Paradigmas de programação
+		O que é um paradigma? Várias formas de resolver o mesmo problema. Formas de abordar o mesmo problema, com diferentes soluções.
+		Pode ser:
+		imperativo (dizer o que o código deve fazer)
+		procedural (funções)
+		estruturado(condicional, loop, break, instruções executadas em sequencia, linguagem C, sequencia, decisão e interação)
+		orientado a objeto(classes, polimorfismo,herança, encapsulamento)
+		funcional (variáveis imutáveis, muita matemática,)
+		lógica (IA)
+		marcação(comandos SQL)
+		Computação distribuída
+
+aula: PRIMEIRO CONTATO COM A PROGRAMAÇÃO
+	tópico: Algoritmos em Portugol
+		Portugol, também conhecido como Português estruturado, é um pseudocódigo escrito em português, usada para se estudar programação.
